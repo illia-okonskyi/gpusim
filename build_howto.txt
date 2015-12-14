@@ -1,0 +1,33 @@
+1) Для сборки GPU-sim необходимы следующие инструменты и фрейвморки.
+- Java NetBeans IDE 7.2 (https://netbeans.org/downloads/index.html)
+- Microsoft Visual Studio 2010 (VC++ 2010)
+- Qt 4.8.4 for Windows VS 2010 (http://download.qt-project.org/official_releases/qt/4.8/4.8.4/qt-win-opensource-4.8.4-vs2010.exe)
+- Visual Studio Add-in 1.1.11 for Qt4  (http://www.nic.funet.fi/pub/mirrors/download.qt-project.org/official_releases/vsaddin/qt-vs-addin-1.1.11-opensource.exe)
+- Qwt 6.0.1 (http://sourceforge.net/projects/qwt/files/qwt/6.0.1/)
+
+2) После установки Qt прописать перенную окружения:
+QTDIR=<Qt-root-directory\>
+
+
+3) Особенности сборки/установки Qwt:
+Перва особенность – невозможность нормального задания префикса установки (--install-prefix), для его задания необходимо явно править qwtconfig.pri, раздел Install paths, сразу после версий. Если до этого все директории для установки библиотек выбирались так, как рекомендовано в данном руководстве, то необходимо указать следующий префикс:
+win32 {
+    QWT_INSTALL_PREFIX    = d:/dev/lib/qwt-6.0.1/built
+}
+
+Вторая особенность – интеграция плагина дизайнера с Qt Designer. Чаще всего она не проходит из-за того, что необходимый плагин собран в debug-режиме (криво созданные makefil’ы из-за кривых описаний проекта qt). Плагины для Qt Designer должны быть собраны в релизе. Для этого, рекомендуется отдельно собирать дебаг и релиз версию:
+> "c:\Program Files (x86)\Microsoft Visual Studio 10.0\vc\vcvarsall.bat"
+> [configure.bat] – опционально, может и не быть
+> qmake ;(необходимо, чтобы %QTDIR%bin было в PATH
+> nmake debug
+> nmake release
+> nmake install
+
+Далее необходимо осуществить интеграцию QWT с системой и с автоматической системой подготовки релизов (о ней позже). Для этого необходимо добавить переменную окружения QWTDIR, которая будет указывать на директорию где лежат собранный qwt (d:\dev\lib\qwt-6.0.1\built\). Также необходимо дописать в PATH путь к собранным бинарникам QWT (%QWTDIR%lib).
+Для интеграции с Qt Designer необходимо скопировать собранный в релизе плагин для дизайнера в соответсвующую директорию Qt:
+> copy %QWTDIR%plugins\designer\qwt_designer_plugin.dll %QTDIR%plugins\designer\
+Для проверки правильности интеграции можно запустить дизайнер и посмотреть, есть ли данный виджет в списке и успешно ли данный плагин загружен.
+
+4) Сборка перевода на украинский язык осущствляется с помощью утилиты lrelease, которая входит в состав Qt. Полученные на выходе *.qm файлы должны находится в директории ../translation относительно текущеей директории приложения.
+
+5) На целевой платформе должен быть установлен VC++2010 redist x86.
