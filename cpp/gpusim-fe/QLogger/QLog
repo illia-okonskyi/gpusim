@@ -1,0 +1,139 @@
+#pragma once
+
+// NOTE: Define the QLOG_MODULE_NAME macros before including this file like
+//       this:
+//         #define QLOG_MODULE_NAME MyModuleName
+//         #include <QLogger/QLog>
+//       When this macros defined qLog_*Msg() macros automatically insert the
+//       module name into the logger output.
+
+#include "QtMsgTypeEx.h"
+#include "QLogManip.h"
+#include <QDebug>
+
+// Use this inline functions to write fatal, info and trace messages like debug
+// messages.
+//
+inline QDebug qFatal() { return QDebug(QtFatalMsg); }
+inline QDebug qInfo() { return QDebug(QtMsgType(QtMsgTypeEx::QtInfoMsg)); }
+inline QDebug qTrace() { return QDebug(QtMsgType(QtMsgTypeEx::QtTraceMsg)); }
+inline QDebug qTest() { return QDebug(QtMsgType(QtMsgTypeEx::QtTestMsg)); }
+
+//
+// Use this inline functions to write messages with module/function/source
+// columns.
+//
+inline QDebug qLog(QDebug &dbg, const qlog_module &module = qlog_module(),
+    const qlog_func &func = qlog_func(), const qlog_source &src = qlog_source())
+{
+    if (!module.isEmpty())
+        dbg << module;
+    if (!func.isEmpty())
+        dbg << func;
+    if (!src.isEmpty())
+        dbg << src;
+
+    return dbg;
+}
+
+inline QDebug qLogFatal(const qlog_module &module = qlog_module(),
+    const qlog_func &func = qlog_func(), const qlog_source &src = qlog_source())
+{
+    return qLog(qFatal(), module, func, src);
+}
+
+inline QDebug qLogCritical(const qlog_module &module = qlog_module(),
+    const qlog_func &func = qlog_func(), const qlog_source &src = qlog_source())
+{
+    return qLog(qCritical(), module, func, src);
+}
+
+inline QDebug qLogWarning(const qlog_module &module = qlog_module(),
+    const qlog_func &func = qlog_func(), const qlog_source &src = qlog_source())
+{
+    return qLog(qWarning(), module, func, src);
+}
+
+inline QDebug qLogInfo(const qlog_module &module = qlog_module(),
+    const qlog_func &func = qlog_func(), const qlog_source &src = qlog_source())
+{
+    return qLog(qInfo(), module, func, src);
+}
+
+inline QDebug qLogDebug(const qlog_module &module = qlog_module(),
+    const qlog_func &func = qlog_func(), const qlog_source &src = qlog_source())
+{
+    return qLog(qDebug(), module, func, src);
+}
+
+inline QDebug qLogTrace(const qlog_module &module = qlog_module(),
+    const qlog_func &func = qlog_func(), const qlog_source &src = qlog_source())
+{
+    return qLog(qTrace(), module, func, src);
+}
+
+inline QDebug qLogTest(const qlog_module &module = qlog_module(),
+    const qlog_func &func = qlog_func(), const qlog_source &src = qlog_source())
+{
+    return qLog(qTest(), module, func, src);
+}
+
+//
+// Use this macros to write messages with function/source columns with
+// automatic function name and source file/line substitution.
+//
+#define qLog_FatalMsg()\
+    (qLogFatal(qlog_cur_module, qlog_cur_func, qlog_cur_src))
+
+#define qLog_CriticalMsg()\
+    (qLogCritical(qlog_cur_module, qlog_cur_func, qlog_cur_src))
+
+#define qLog_WarningMsg()\
+    (qLogWarning(qlog_cur_module, qlog_cur_func, qlog_cur_src))
+
+#define qLog_InfoMsg()\
+    (qLogInfo(qlog_cur_module, qlog_cur_func, qlog_cur_src))
+
+#define qLog_DebugMsg()\
+    (qLogDebug(qlog_cur_module, qlog_cur_func, qlog_cur_src))
+
+#define qLog_TraceMsg()\
+    (qLogTrace(qlog_cur_module, qlog_cur_func, qlog_cur_src))
+
+#define qLog_TestMsg()\
+    (qLogTest(qlog_cur_module, qlog_cur_func, qlog_cur_src))
+
+//
+// Use this macros to write messages with module/function/source columns
+// with automatic function name and source file/line substitution.
+//
+#define qLog_FatalMsgEx(moduleName)\
+    (qLogFatal(qlog_module((#moduleName)), qlog_cur_func, qlog_cur_src))
+
+#define qLog_CriticalMsgEx(moduleName)\
+    (qLogCritical(qlog_module((#moduleName)), qlog_cur_func, qlog_cur_src))
+
+#define qLog_WarningMsgEx(moduleName)\
+    (qLogWarning(qlog_module((#moduleName)), qlog_cur_func, qlog_cur_src))
+
+#define qLog_InfoMsgEx(moduleName)\
+    (qLogInfo(qlog_module((#moduleName)), qlog_cur_func, qlog_cur_src))
+
+#define qLog_DebugMsgEx(moduleName)\
+    (qLogDebug(qlog_module((#moduleName)), qlog_cur_func, qlog_cur_src))
+
+#define qLog_TraceMsgEx(moduleName)\
+    (qLogTrace(qlog_module((#moduleName)), qlog_cur_func, qlog_cur_src))
+
+#define qLog_TestMsgEx(moduleName)\
+    (qLogTest(qlog_module((#moduleName)), qlog_cur_func, qlog_cur_src))
+
+// Use macros QLOG_OPTIMIZE_CHECK to remove unwanted in retail buidls messages.
+// from code: define QLOG_OPTIMIZE and resulting code will not include 
+// messages (and code snippets) wrapped into QLOG_OPTIMIZE_CHECK.
+//
+#ifndef QLOG_OPTIMIZE
+#define QLOG_OPTIMIZE_CHECK(msg) msg
+#else
+#define QLOG_OPTIMIZE_CHECK(msg)
+#endif // !QLOG_OPTIMIZE

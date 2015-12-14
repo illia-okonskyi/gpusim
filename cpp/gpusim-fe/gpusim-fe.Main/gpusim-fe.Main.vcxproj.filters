@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{d00dcd3e-d079-44f2-9f77-ddcfd859ea59}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{c41b05b5-400f-43dc-b38a-3f9633e5b1a5}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="MainWindow">
+      <UniqueIdentifier>{97053078-5365-474b-9780-931b24e1fcc6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExperimentEditorWidget">
+      <UniqueIdentifier>{76b61bc4-65d5-4b18-bd9b-f00a31c6961a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PluginSelectDialog">
+      <UniqueIdentifier>{931520c0-320a-4b99-9da6-8cb5cf947c3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SimulationDialog">
+      <UniqueIdentifier>{b8f4e2b7-9201-449b-a86f-1929b5a389f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ViewPlotsDialog">
+      <UniqueIdentifier>{c34d089e-82eb-432c-9a2f-e2790f7ea16c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ViewPlotsDialog\PlotWidget">
+      <UniqueIdentifier>{a384fee4-5230-4215-b064-97672afb6cf5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AboutDialog">
+      <UniqueIdentifier>{b58d1327-c130-4cdf-8372-7c7eaff24608}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="GeneratedFiles\qrc_resources.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_MainWindow.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_MainWindow.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="MainWindow.cpp">
+      <Filter>MainWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ExperimentEditorWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ExperimentEditorWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="ExperimentEditorWidget.cpp">
+      <Filter>ExperimentEditorWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_PluginSelectDialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_PluginSelectDialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="PluginSelectDialog.cpp">
+      <Filter>PluginSelectDialog</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_SimulationDialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_SimulationDialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="SimulationDialog.cpp">
+      <Filter>SimulationDialog</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ViewPlotsDialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ViewPlotsDialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewPlotsDialog.cpp">
+      <Filter>ViewPlotsDialog</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_PlotWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_PlotWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="PlotWidget.cpp">
+      <Filter>ViewPlotsDialog\PlotWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_AboutDialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_AboutDialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="AboutDialog.cpp">
+      <Filter>AboutDialog</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Resources\resources.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MainWindow.h">
+      <Filter>MainWindow</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MainWindow.ui">
+      <Filter>MainWindow</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ExperimentEditorWidget.h">
+      <Filter>ExperimentEditorWidget</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ExperimentEditorWidget.ui">
+      <Filter>ExperimentEditorWidget</Filter>
+    </CustomBuild>
+    <CustomBuild Include="PluginSelectDialog.ui">
+      <Filter>PluginSelectDialog</Filter>
+    </CustomBuild>
+    <CustomBuild Include="PluginSelectDialog.h">
+      <Filter>PluginSelectDialog</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SimulationDialog.ui">
+      <Filter>SimulationDialog</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SimulationDialog.h">
+      <Filter>SimulationDialog</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ViewPlotsDialog.ui">
+      <Filter>ViewPlotsDialog</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ViewPlotsDialog.h">
+      <Filter>ViewPlotsDialog</Filter>
+    </CustomBuild>
+    <CustomBuild Include="PlotWidget.ui">
+      <Filter>ViewPlotsDialog\PlotWidget</Filter>
+    </CustomBuild>
+    <CustomBuild Include="PlotWidget.h">
+      <Filter>ViewPlotsDialog\PlotWidget</Filter>
+    </CustomBuild>
+    <CustomBuild Include="AboutDialog.ui">
+      <Filter>AboutDialog</Filter>
+    </CustomBuild>
+    <CustomBuild Include="AboutDialog.h">
+      <Filter>AboutDialog</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GeneratedFiles\ui_MainWindow.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_ExperimentEditorWidget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_PluginSelectDialog.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_SimulationDialog.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_ViewPlotsDialog.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_PlotWidget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_AboutDialog.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_about.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\btn_apply.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\btn_new.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\btn_open.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\btn_reload.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\btn_runModeling.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\btn_save.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\btn_saveAs.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\btn_viewPlots.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gpusim-fe.Main.ts" />
+  </ItemGroup>
+</Project>

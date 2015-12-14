@@ -1,0 +1,13 @@
+<RCC>
+  <qresource prefix="/buttons">
+    <file>btn_apply.png</file>
+    <file>btn_about.png</file>
+    <file>btn_new.png</file>
+    <file>btn_open.png</file>
+    <file>btn_reload.png</file>
+    <file>btn_runModeling.png</file>
+    <file>btn_save.png</file>
+    <file>btn_saveAs.png</file>
+    <file>btn_viewPlots.png</file>
+  </qresource>
+</RCC>

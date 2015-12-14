@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{988b3202-849d-4349-9abe-00eba9d59cc9}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{187e650e-1d07-4d7b-ae9f-86667acfc46e}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="MMExperimentPlugin">
+      <UniqueIdentifier>{01a6aab2-9db1-4315-a1df-f174c922c0dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MMGenerator">
+      <UniqueIdentifier>{bcc9828b-cb1f-49fe-b303-c163a869688e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Widgets">
+      <UniqueIdentifier>{927c4eff-c3c7-4b9e-b3c8-f302e7f0dc83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Widgets\MMGeneratorSettingsEditorWidget">
+      <UniqueIdentifier>{aa80a613-b8e3-43a3-96a8-6d42d36a9b9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Widgets\MMGeneratorBoundaryConditionsEditorWidget">
+      <UniqueIdentifier>{fdcf5003-e717-4204-87e5-7b2bc7cd8502}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MMExperimentPlugin.cpp">
+      <Filter>MMExperimentPlugin</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_MMExperimentPlugin.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_MMExperimentPlugin.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="MMGenerator.cpp">
+      <Filter>MMGenerator</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_MMGeneratorSettingsEditorWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_MMGeneratorSettingsEditorWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Widgets\MMGeneratorSettingsEditorWidget.cpp">
+      <Filter>Widgets\MMGeneratorSettingsEditorWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_MMGeneratorBoundaryConditionsEditorWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_MMGeneratorBoundaryConditionsEditorWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Widgets\MMGeneratorBoundaryConditionsEditorWidget.cpp">
+      <Filter>Widgets\MMGeneratorBoundaryConditionsEditorWidget</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MMGenerator.h">
+      <Filter>MMGenerator</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_MMGeneratorSettingsEditorWidget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_MMGeneratorBoundaryConditionsEditorWidget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="MMExperimentPlugin.h">
+      <Filter>MMExperimentPlugin</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Widgets\MMGeneratorSettingsEditorWidget.ui">
+      <Filter>Widgets\MMGeneratorSettingsEditorWidget</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Widgets\MMGeneratorSettingsEditorWidget.h">
+      <Filter>Widgets\MMGeneratorSettingsEditorWidget</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Widgets\MMGeneratorBoundaryConditionsEditorWidget.ui">
+      <Filter>Widgets\MMGeneratorBoundaryConditionsEditorWidget</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Widgets\MMGeneratorBoundaryConditionsEditorWidget.h">
+      <Filter>Widgets\MMGeneratorBoundaryConditionsEditorWidget</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gpusim-fe.MatrixMultiplyExperimentPlugin.ts" />
+    <None Include="mm-orginals-full.gsc" />
+  </ItemGroup>
+</Project>

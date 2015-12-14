@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{41b8855d-fa89-4c1a-98d9-83f10a50ae81}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{2d74ad4d-cead-487a-a741-47b5b725d0c1}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Calibrator">
+      <UniqueIdentifier>{d4a85953-d678-480c-8af3-17ea04f3dfb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Calibrator\CalibrationProfile">
+      <UniqueIdentifier>{0de97a89-0ee5-414f-8288-eae3744326e7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_Calibrator.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Calibrator.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="CalibrationProfile\CalibrationProfile.cpp">
+      <Filter>Calibrator\CalibrationProfile</Filter>
+    </ClCompile>
+    <ClCompile Include="CalibrationProfile\SettingCalibrationInfo.cpp">
+      <Filter>Calibrator\CalibrationProfile</Filter>
+    </ClCompile>
+    <ClCompile Include="Calibrator.cpp">
+      <Filter>Calibrator</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CalibrationProfile\CalibrationProfile.h">
+      <Filter>Calibrator\CalibrationProfile</Filter>
+    </ClInclude>
+    <ClInclude Include="CalibrationProfile\SettingCalibrationInfo.h">
+      <Filter>Calibrator\CalibrationProfile</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Calibrator.h">
+      <Filter>Calibrator</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

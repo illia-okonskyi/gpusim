@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Global">
+      <UniqueIdentifier>{f19d639b-553d-4768-857a-aed45ecd566e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Global\MetaTypes">
+      <UniqueIdentifier>{8e857298-6233-4ca7-8c18-deaca30b7ffa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IExperimentPlugin">
+      <UniqueIdentifier>{1fa2b04f-ba43-4951-8a99-614c12262c40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PluginsHost">
+      <UniqueIdentifier>{82100fee-42dc-4513-b16c-cf7d894c3a96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{22b4e6c3-ecda-41de-85ba-f55add963e71}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{51e88060-a3ea-4e6e-ac2f-8ef1c2d88d55}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MetaTypes.cpp">
+      <Filter>Global\MetaTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="IExperimentPlugin.cpp">
+      <Filter>IExperimentPlugin</Filter>
+    </ClCompile>
+    <ClCompile Include="PluginsHost.cpp">
+      <Filter>PluginsHost</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ExperimentPlugin_global.h">
+      <Filter>Global</Filter>
+    </ClInclude>
+    <ClInclude Include="MetaTypes.h">
+      <Filter>Global\MetaTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="IExperimentPlugin.h">
+      <Filter>IExperimentPlugin</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="PluginsHost.h">
+      <Filter>PluginsHost</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

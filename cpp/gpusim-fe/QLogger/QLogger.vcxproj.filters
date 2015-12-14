@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="QLogger">
+      <UniqueIdentifier>{6f6e8535-232a-4e4e-8aec-a744838116cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Global">
+      <UniqueIdentifier>{75bc1b4a-423c-40da-bbab-836beba496a4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="QLog">
+      <Filter>QLogger</Filter>
+    </None>
+    <None Include="QLogger">
+      <Filter>QLogger</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="QLogger.cpp">
+      <Filter>QLogger</Filter>
+    </ClCompile>
+    <ClCompile Include="QLogManip.cpp">
+      <Filter>QLogger</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="QLogger_global.h">
+      <Filter>Global</Filter>
+    </ClInclude>
+    <ClInclude Include="QLogger.h">
+      <Filter>QLogger</Filter>
+    </ClInclude>
+    <ClInclude Include="QLogManip.h">
+      <Filter>QLogger</Filter>
+    </ClInclude>
+    <ClInclude Include="QtMsgTypeEx.h">
+      <Filter>QLogger</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

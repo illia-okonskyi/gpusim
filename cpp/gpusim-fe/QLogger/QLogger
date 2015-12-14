@@ -1,0 +1,5 @@
+#pragma once
+
+#include "QLogger.h"
+#include "QtMsgTypeEx.h"
+#include "QLog"

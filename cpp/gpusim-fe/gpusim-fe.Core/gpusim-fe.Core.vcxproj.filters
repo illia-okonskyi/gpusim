@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Global">
+      <UniqueIdentifier>{1d9baaff-51f8-432f-a113-f35507768f46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GridSimConfig">
+      <UniqueIdentifier>{d66a6bbd-d6f1-459c-948b-86ae698e0bb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GridSimConfig\GridSimConfig">
+      <UniqueIdentifier>{e35dc55d-fd0c-46e8-8fdc-098c4a418e64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GridSimConfig\GridSimGridletConfig">
+      <UniqueIdentifier>{f73a856f-8cda-4c27-8b40-71d520cdc028}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GridSimConfig\GridSimMachineConfig">
+      <UniqueIdentifier>{48c4f655-0961-4d0e-a467-d6cc5bff6b26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GridSimConfig\GridSimOutput">
+      <UniqueIdentifier>{2ee2e72f-63d4-4da8-a71b-2e6d0289db4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GridSimConfig\GridSimResourceConfig">
+      <UniqueIdentifier>{5e88077d-521b-4f6b-b6d6-dfbca793fbe8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{5fc0957e-d046-4951-89a5-ba8aaa885628}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{5b0d45d7-6d05-4698-b89f-d95f78e9ffa3}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Global\Enums">
+      <UniqueIdentifier>{9f05f7bc-ddac-4177-aacd-574e27dc841b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Global\MetaTypes">
+      <UniqueIdentifier>{8ef7657f-d4c0-47d3-9f67-532132d77753}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GridSimConfig\Serialization">
+      <UniqueIdentifier>{e42a6aba-9b4b-4b69-9fd4-a7f5e8e76b4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Simulation">
+      <UniqueIdentifier>{abe5ac28-d27d-4cd4-a732-41419a5f6f78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Experiment">
+      <UniqueIdentifier>{a3b0b068-ae12-4c93-a7ad-4bf2ce9e24f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IGenerator">
+      <UniqueIdentifier>{3f87ea43-bec7-4ac7-bafd-0183ecdee442}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Experiment\Experimenter">
+      <UniqueIdentifier>{7c604ab3-5790-4163-b7c4-600747d68080}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Simulation\Simulator">
+      <UniqueIdentifier>{c8a38db4-214c-4aa3-aa9a-0b56b438a94c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Widgets">
+      <UniqueIdentifier>{ec8411dd-8681-4c3f-9208-0a8b2089afe5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Widgets\IGeneratorSettingsEditorWidget">
+      <UniqueIdentifier>{3052a06a-fd12-4ea7-adba-fd410d9e28c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plot">
+      <UniqueIdentifier>{e803f609-9883-461b-a410-a989ed926561}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Widgets\IGeneratorBoundaryConditionsEditorWidget">
+      <UniqueIdentifier>{1202c714-f553-495f-9acf-c17d95c7315b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CalibrationHelper">
+      <UniqueIdentifier>{eccc7c8a-b759-465d-911e-62e26da17afd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GridSimConfig\GridSimConfig.cpp">
+      <Filter>GridSimConfig\GridSimConfig</Filter>
+    </ClCompile>
+    <ClCompile Include="GridSimConfig\GridSimGridletConfig.cpp">
+      <Filter>GridSimConfig\GridSimGridletConfig</Filter>
+    </ClCompile>
+    <ClCompile Include="GridSimConfig\GridSimMachineConfig.cpp">
+      <Filter>GridSimConfig\GridSimMachineConfig</Filter>
+    </ClCompile>
+    <ClCompile Include="GridSimConfig\GridSimOutput.cpp">
+      <Filter>GridSimConfig\GridSimOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="GridSimConfig\GridSimResourceConfig.cpp">
+      <Filter>GridSimConfig\GridSimResourceConfig</Filter>
+    </ClCompile>
+    <ClCompile Include="MetaTypes.cpp">
+      <Filter>Global\MetaTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="Enums.cpp">
+      <Filter>Global\Enums</Filter>
+    </ClCompile>
+    <ClCompile Include="GridSimConfig\Serialization\IJavaXMLSerialize.cpp">
+      <Filter>GridSimConfig\Serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="GridSimConfig\Serialization\JavaXMLHelper.cpp">
+      <Filter>GridSimConfig\Serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_Simulator.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Simulator.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_Experimenter.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Experimenter.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Widgets\IGeneratorSettingsEditorWidget.cpp">
+      <Filter>Widgets\IGeneratorSettingsEditorWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_IGeneratorSettingsEditorWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_IGeneratorSettingsEditorWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Simulation\Simulator.cpp">
+      <Filter>Simulation\Simulator</Filter>
+    </ClCompile>
+    <ClCompile Include="Simulation\Simulation.cpp">
+      <Filter>Simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="Experiment\Experimenter.cpp">
+      <Filter>Experiment\Experimenter</Filter>
+    </ClCompile>
+    <ClCompile Include="Experiment\Experiment.cpp">
+      <Filter>Experiment</Filter>
+    </ClCompile>
+    <ClCompile Include="IGenerator\IGenerator.cpp">
+      <Filter>IGenerator</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_IGeneratorBoundaryConditionsEditorWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_IGeneratorBoundaryConditionsEditorWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Widgets\IGeneratorBoundaryConditionsEditorWidget.cpp">
+      <Filter>Widgets\IGeneratorBoundaryConditionsEditorWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="CalibrationHelper\CalibrationHelper.cpp">
+      <Filter>CalibrationHelper</Filter>
+    </ClCompile>
+    <ClCompile Include="Plot\Plot.cpp">
+      <Filter>Plot</Filter>
+    </ClCompile>
+    <ClCompile Include="Plot\PlotCurve.cpp">
+      <Filter>Plot</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Core_global.h">
+      <Filter>Global</Filter>
+    </ClInclude>
+    <ClInclude Include="GridSimConfig\GridSimConfig.h">
+      <Filter>GridSimConfig\GridSimConfig</Filter>
+    </ClInclude>
+    <ClInclude Include="GridSimConfig\GridSimGridletConfig.h">
+      <Filter>GridSimConfig\GridSimGridletConfig</Filter>
+    </ClInclude>
+    <ClInclude Include="GridSimConfig\GridSimMachineConfig.h">
+      <Filter>GridSimConfig\GridSimMachineConfig</Filter>
+    </ClInclude>
+    <ClInclude Include="GridSimConfig\GridSimOutput.h">
+      <Filter>GridSimConfig\GridSimOutput</Filter>
+    </ClInclude>
+    <ClInclude Include="GridSimConfig\GridSimResourceConfig.h">
+      <Filter>GridSimConfig\GridSimResourceConfig</Filter>
+    </ClInclude>
+    <ClInclude Include="MetaTypes.h">
+      <Filter>Global\MetaTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="Enums.h">
+      <Filter>Global\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="GridSimConfig\Serialization\IJavaXMLSerialize.h">
+      <Filter>GridSimConfig\Serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="GridSimConfig\Serialization\JavaXMLHelper.h">
+      <Filter>GridSimConfig\Serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="GridSimConfig\Serialization\JavaXMLListSerialize.hpp">
+      <Filter>GridSimConfig\Serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="Simulation\Simulation.h">
+      <Filter>Simulation</Filter>
+    </ClInclude>
+    <ClInclude Include="Experiment\Experiment.h">
+      <Filter>Experiment</Filter>
+    </ClInclude>
+    <ClInclude Include="IGenerator\GeneratorInput.h">
+      <Filter>IGenerator</Filter>
+    </ClInclude>
+    <ClInclude Include="IGenerator\GeneratorSettings.h">
+      <Filter>IGenerator</Filter>
+    </ClInclude>
+    <ClInclude Include="IGenerator\IGenerator.h">
+      <Filter>IGenerator</Filter>
+    </ClInclude>
+    <ClInclude Include="IGenerator\GeneratorBorderConditions.h">
+      <Filter>IGenerator</Filter>
+    </ClInclude>
+    <ClInclude Include="CalibrationHelper\CalibrationHelper.h">
+      <Filter>CalibrationHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="Plot\Plot.h">
+      <Filter>Plot</Filter>
+    </ClInclude>
+    <ClInclude Include="Plot\PlotCurve.h">
+      <Filter>Plot</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Widgets\IGeneratorSettingsEditorWidget.h">
+      <Filter>Widgets\IGeneratorSettingsEditorWidget</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Simulation\Simulator.h">
+      <Filter>Simulation\Simulator</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Experiment\Experimenter.h">
+      <Filter>Experiment\Experimenter</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Widgets\IGeneratorBoundaryConditionsEditorWidget.h">
+      <Filter>Widgets\IGeneratorBoundaryConditionsEditorWidget</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>
